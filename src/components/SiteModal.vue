@@ -12,6 +12,7 @@ let data = (
     },
   })
 ).data;
+
 </script>
 
 <template>
@@ -88,8 +89,7 @@ let data = (
 }
 
 .description {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   margin-right: 6%;
 }
@@ -107,6 +107,7 @@ let data = (
 }
 
 #trailer {
+  
   margin-top: 1%;
 }
 </style>
