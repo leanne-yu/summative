@@ -27,6 +27,7 @@ const getGenres = async () => {
 
 <template>
   <SiteHeader />
+  <h5>Discover movies here!</h5>
   <RouterLink to="/cart" custom v-slot="{ navigate }">
     <button @click="navigate" role="link">Cart</button>
   </RouterLink>
@@ -51,9 +52,9 @@ const getGenres = async () => {
 }
 
 .purchase-container>.poster {
-  max-height: 42.5vh;
-  max-width: 42.5vw;
-  margin-left: 4%;
+  height: 42vh;
+  width: 20vw;
+  margin-left: 3.5%;
   margin-bottom: 2%;
   border: solid;
   border-width: 20%;

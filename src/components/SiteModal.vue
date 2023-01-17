@@ -20,7 +20,7 @@ let data = (
     <div class="modal-outer-container" @click.self="emits('toggleModal')">
       <div class="modal-inner-container">
         <button class="close-button" @click="emits('toggleModal')">X</button>
-        <img class="modalPoster" :src="`https://image.tmdb.org/t/p/w500/${data.poster_path}`" width="275" height="425"
+        <img class="modalPoster" :src="`https://image.tmdb.org/t/p/w500/${data.poster_path}`" width="315" height="470"
           alt="movie poster" />
         <div class="title">
           <h1>{{ data.title }}</h1>
@@ -32,8 +32,8 @@ let data = (
             title: data.title
           })">Purchase</button>
           <h3>{{ data.tagline }}</h3>
-          <h3>{{ data.release_date }}</h3>
-          <iframe width="350" height="215" id="trailer"
+          <h4>{{ data.release_date }}</h4>
+          <iframe width="355" height="210" id="trailer"
             :src="`https://www.youtube.com/embed/${data.videos.results[0].key}`" frameborder="0"
             allowfullscreen></iframe>
         </div>
@@ -60,7 +60,7 @@ let data = (
   background-color: ivory;
   color: rgb(141, 187, 141);
   width: clamp(400px, 100%, 800px);
-  height: 475px;
+  height: 525px;
   position: relative;
   border: solid;
   border-color: ivory;
@@ -88,7 +88,10 @@ let data = (
   font-size: 16px;
   margin-right: 6%;
 }
-
+.description > button {
+  margin-right: 3%;
+  margin-top: -1%;
+}
 .modalPoster {
   float: left;
   padding: 3%;
