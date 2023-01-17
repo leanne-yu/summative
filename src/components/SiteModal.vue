@@ -1,6 +1,8 @@
 <script setup>
 import axios from "axios";
+import { useStore } from "../store/index.js"
 
+const store = useStore();
 const props = defineProps(["id"]);
 const emits = defineEmits(["toggleModal"]);
 
@@ -9,10 +11,8 @@ let data = (
     params: {
       api_key: "ab590dbfc1eb546b5263a30c390d2d07",
       append_to_response: "videos",
-    },
-  })
-).data;
-
+    }
+  })).data;
 </script>
 
 <template>
@@ -20,27 +20,22 @@ let data = (
     <div class="modal-outer-container" @click.self="emits('toggleModal')">
       <div class="modal-inner-container">
         <button class="close-button" @click="emits('toggleModal')">X</button>
-        <img
-          class="modalPoster"
-          :src="`https://image.tmdb.org/t/p/w500/${data.poster_path}`"
-          width="275"
-          height="425"
-          alt="movie poster"
-        />
+        <img class="modalPoster" :src="`https://image.tmdb.org/t/p/w500/${data.poster_path}`" width="275" height="425"
+          alt="movie poster" />
         <div class="title">
           <h1>{{ data.title }}</h1>
         </div>
         <div class="description">
+          <button @click="store.addToCart(props.id, {
+            id: data.id,
+            poster: data.poster_path,
+            title: data.title
+          })">Purchase</button>
           <h3>{{ data.tagline }}</h3>
           <h3>{{ data.release_date }}</h3>
-          <iframe
-            width="350"
-            height="215"
-            id="trailer"
-            :src="`https://www.youtube.com/embed/${data.videos.results[0].key}`"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <iframe width="350" height="215" id="trailer"
+            :src="`https://www.youtube.com/embed/${data.videos.results[0].key}`" frameborder="0"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -107,7 +102,7 @@ let data = (
 }
 
 #trailer {
-  
+
   margin-top: 1%;
 }
 </style>
