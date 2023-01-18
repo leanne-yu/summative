@@ -12,7 +12,7 @@
       <h1>Shrek's Movie Shack</h1>
     </div>
     <RouterLink to="/Login" custom v-slot="{ navigate }">
-      <button @click="navigate" role="link">Login</button>
+      <button class="login-button" @click="navigate" role="link">Login</button>
     </RouterLink>
   </div>
 </template>
@@ -37,7 +37,7 @@ body {
   margin-top: 1%;
 }
 
-button {
+.login-button {
   background-color: rgb(134, 184, 134);
   padding: 15px 35px;
   height: 50px;

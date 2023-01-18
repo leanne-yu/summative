@@ -22,7 +22,7 @@ img {
   aspect-ratio: 2 / 3;
 }
 h1 {
-  color: rgb(141, 187, 141);
+  color: rgb(19, 83, 19);
   font-size: 35px;
   margin-bottom: 0%;
   font-family: 'Fredoka One';
