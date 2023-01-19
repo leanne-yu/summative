@@ -81,6 +81,7 @@ let data = (
 
 .close-button {
   margin-top: 0%;
+  font-family: 'Fredoka One';
 }
 
 .description {
@@ -91,6 +92,14 @@ let data = (
 .description > button {
   margin-right: 3%;
   margin-top: -1%;
+  background-color: rgb(134, 184, 134);
+  padding: 10px 40px;
+  height: 40px;
+  font-size: larger;
+  font-family: 'Fredoka One';
+  color: rgb(14, 58, 14);
+  border: none;
+  border-radius: 18px;
 }
 .modalPoster {
   float: left;

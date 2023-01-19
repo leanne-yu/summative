@@ -43,10 +43,11 @@ body {
   height: 50px;
   margin-top: 6.5%;
   margin-left: 3%;
-  font-size: medium;
+  font-size: large;
   font-family: 'Fredoka One';
   color: rgb(14, 58, 14);
   border: none;
+  border-radius: 20px;
 }
 
 .shrekHead{

@@ -69,27 +69,33 @@ const getGenres = async () => {
 .discover {
   text-align: center;
   font-family: 'Fredoka One';
-  color: rgb(19, 83, 19);
+  color: rgb(73, 103, 73);
+  margin: 0%;
 }
 
 select {
   position: absolute;
-  margin-left: 2px;
-  left: 50%;
-
+  margin-left: 15%;
+  font-weight: lighter;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Sigmar One';
+  color: rgb(125, 156, 125);
+  background-color: ivory;
+  border-radius: 18px;
 }
 
 .cart-button {
   position: absolute;
   margin: 0;
-  right: 50%;
+  margin-left: 5%;
   background-color: rgb(134, 184, 134);
-  padding: 15px 35px;
+  padding: 10px 40px;
   height: 40px;
-  font-size: medium;
+  font-size: larger;
   font-family: 'Fredoka One';
   color: rgb(14, 58, 14);
   border: none;
-
+  border-radius: 18px;
 }
 </style>
