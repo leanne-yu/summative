@@ -27,7 +27,6 @@ export const useStore = defineStore('store', {
     },
     addToCart(id, data) {
       this.cart.set(id, data);
-      console.log(this.cart);
     },
     removeFromCart(id) {
       this.cart.delete(id);

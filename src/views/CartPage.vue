@@ -9,47 +9,47 @@ const store = useStore();
 <template>
   <SiteHeader />
   <h1 class="cart">My Cart</h1>
-  <div v-for="movie in Array.from(store.cart.values())">
-    <img :src="`https://image.tmdb.org/t/p/w500${movie.poster}`" />
+  <div class="cart-movies" v-for="movie in Array.from(store.cart.values())">
+    <div class="cart-image">
+      <img :src="`https://image.tmdb.org/t/p/w500${movie.poster}`" />
+    </div>
     <div class="cart-info">
       <h1>{{ movie.title }}</h1>
-      <h1>{{ movie.date }}</h1>
-      <h1>{{ movie.overview }}</h1>
+      <p>{{ movie.date }}</p>
+      <p>{{ movie.summary }}</p>
     </div>
     <button class="remove-button" @click="store.removeFromCart(movie.id)">Remove</button>
   </div>
 </template>
 
 <style scoped>
-img {
-  height: 42vh;
-  width: 20vw;
-  margin-left: 3.5%;
-  margin-bottom: 2%;
-  border: solid;
-  border-width: 20%;
-  border-radius: 4%;
-  border-color: rgb(151, 186, 151);
-  margin-top: 50px;
+.cart-image {
+  position: relative;
+  height: 32vh;
+  width: 15vw;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  border: none;
   display: flex;
-  transform: 50%;
-  translate: 50%;
+  float: left;
+  padding-right: 5%;
+  
 }
 
 .cart {
   margin: 0%;
   color: rgb(73, 103, 73);
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Fredoka One';
   margin-top: 1%;
   text-align: center;
   text-decoration: underline;
+  
 }
 
 .remove-button {
   position: absolute;
   margin: 0;
-  margin-left: 3.5%;
   background-color: rgb(134, 184, 134);
   padding: 10px 35px;
   height: 40px;
@@ -60,8 +60,9 @@ img {
   border-radius: 18px;
 }
 
-.cart-info {
-  text-align: Left;
-  font-family: 'Sigmar One';
+.cart-movies > .cart-info {
+  margin: 5%;
+  color: rgb(14, 58, 14);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 </style>

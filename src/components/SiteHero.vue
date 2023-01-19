@@ -27,7 +27,7 @@
 .hero {
   position: absolute;
   text-align: center;
-  top: 79%;
+  top: 75%;
   left: 50%;
   color: rgb(255, 255, 255);
   transform: translate(-50%, -50%);

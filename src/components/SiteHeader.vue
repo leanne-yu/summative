@@ -39,7 +39,7 @@ body {
 
 .login-button {
   background-color: rgb(134, 184, 134);
-  padding: 15px 35px;
+  padding: 15px 40px;
   height: 50px;
   margin-top: 6.5%;
   margin-left: 3%;
@@ -47,7 +47,7 @@ body {
   font-family: 'Fredoka One';
   color: rgb(14, 58, 14);
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .shrekHead{

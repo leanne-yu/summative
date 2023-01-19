@@ -29,7 +29,9 @@ let data = (
           <button @click="store.addToCart(props.id, {
             id: data.id,
             poster: data.poster_path,
-            title: data.title
+            title: data.title,
+            date: data.release_date,
+            summary: data.overview,
           })">Purchase</button>
           <h3>{{ data.tagline }}</h3>
           <h4>{{ data.release_date }}</h4>
