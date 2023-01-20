@@ -104,7 +104,7 @@ let data = (
 }
 .modalPoster {
   float: left;
-  padding-bottom: 3%;
+  padding: 3%;
 }
 
 .title {
