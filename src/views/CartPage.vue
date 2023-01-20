@@ -64,6 +64,7 @@ const store = useStore();
 .cart-info {
   margin: 0%;
   margin-top: 2.5%;
+  margin-right: 2.5%;
   color: rgb(18, 78, 18);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
