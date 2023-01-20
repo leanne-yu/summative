@@ -35,7 +35,7 @@ let data = (
           })">Purchase</button>
           <h3>{{ data.tagline }}</h3>
           <h4>{{ data.release_date }}</h4>
-          <iframe width="355" height="210" id="trailer"
+          <iframe v-if="data.videos.results.length" width="355" height="210" id="trailer"
             :src="`https://www.youtube.com/embed/${data.videos.results[0].key}`" frameborder="0"
             allowfullscreen></iframe>
         </div>
@@ -92,7 +92,6 @@ let data = (
   margin-right: 6%;
 }
 .description > button {
-  margin-right: 3%;
   margin-top: -1%;
   background-color: rgb(134, 184, 134);
   padding: 10px 40px;
@@ -105,12 +104,12 @@ let data = (
 }
 .modalPoster {
   float: left;
-  padding: 3%;
+  padding-bottom: 3%;
 }
 
 .title {
   font-family: "Fredoka One";
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   margin-right: 6%;
 }

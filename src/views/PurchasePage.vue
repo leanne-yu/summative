@@ -58,7 +58,6 @@ const getGenres = async () => {
   height: 42vh;
   width: 20vw;
   margin-left: 3.5%;
-  margin-bottom: 2%;
   border: solid;
   border-width: 20%;
   border-radius: 4%;
@@ -71,6 +70,7 @@ const getGenres = async () => {
   font-family: 'Fredoka One';
   color: rgb(73, 103, 73);
   margin: 0%;
+  margin-bottom: 2.5%;
 }
 
 select {
