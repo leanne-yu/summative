@@ -3,7 +3,6 @@ import { useStore } from "../store/index.js"
 import SiteHeader from "../components/SiteHeader.vue";
 
 const store = useStore();
-
 </script>
 
 <template>

@@ -1,5 +1,4 @@
 <script setup>
-import axios from 'axios';
 import { ref } from 'vue';
 import SiteHeader from '../components/SiteHeader.vue';
 import SiteModal from '../components/SiteModal.vue';
@@ -22,7 +21,6 @@ const closeModal = () => {
 const getGenres = async () => {
   await store.getMovies(genre.value);
 }
-
 </script>
 
 <template>

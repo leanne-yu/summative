@@ -91,7 +91,8 @@ let data = (
   font-size: 16px;
   margin-right: 6%;
 }
-.description > button {
+
+.description>button {
   margin-top: -1%;
   background-color: rgb(134, 184, 134);
   padding: 10px 40px;
@@ -102,6 +103,7 @@ let data = (
   border: none;
   border-radius: 18px;
 }
+
 .modalPoster {
   float: left;
   padding: 3%;
